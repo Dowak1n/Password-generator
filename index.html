@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lng-unit">Password Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<br>
+
+<header>
+    <div class="container">
+    <div class="logo-header">
+        <div class="col-6-header">
+            <img src="images/icon/logo_p.png" alt="logo">
+            <h1 class="h1-logo">Perfect <br>password</h1>
+        </div>
+        <div class="col-10-header">
+        <select class="change-lang">
+            <option value="en" selected>EN</option>
+            <option value="ru">RU</option>
+        </select>
+    </div>
+    </div>
+</div>
+</header>
+
+<main>
+    <div class="background">
+        <div class="container-main">
+            <div class="row">
+                <div class="col-12 padding">
+                    <h1 class="lng-pass">PASSWORD GENERATOR</h1>
+                    <h2 class="lng-perfect">create the perfect password</h2>
+                </div>
+                <div class="col-12">
+                    <div class="col-12">
+                    <div class="input-container-main ">
+                        <div class="generator-input">
+                            <div id="result" class="lng-your password col-8">
+                                your future password :)
+                            </div>
+                            <div class="control-buttons col-4">
+                                <div class="generate-icon rotate" id="pass_start">
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div id="copyText" class="lng-copy button" onclick="copytext('#result')">COPY</div>
+                     </div>
+                     </div>
+
+                <div class="col-12">
+                    <div class="input-container">
+                        <span class="lng-lenght">PASSWORD LENGTH:</span><span class="span" id="output"></span><input
+                            type="range" id="passLenght" value="5" min="1" max="50" step="1" class="slider"
+                            onchange="generate()">
+                    </div>
+                </div>
+
+                <div class="col-12  padding">
+                    <div class="input-container">
+                        <span class="lng-used">SYMBOLS USED: </span>
+
+                        <label class="check option">
+                            <input class="check_input" type="checkbox" id="arr_EN">
+                            <span class="check_box"></span>
+                            ABC
+                        </label>
+
+                        <label class="check option">
+                            <input class="check_input" type="checkbox" id="arr_en" checked disabled>
+                            <span class="check_box"></span>
+                            abc
+                        </label>
+
+                        <label class="check option">
+                            <input class="check_input" type="checkbox" id="arr_num">
+                            <span class="check_box"></span>
+                            123
+                        </label>
+
+                        <label class="check option">
+                            <input class="check_input" type="checkbox" id="arr_symb">
+                            <span class="check_box"></span>
+                            @#$%
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-text">
+        <div class="row">
+            <div class="col-12 padding-bottom">
+                <h3 class="lng-secure">The Importance of Strong, Secure Passwords</h3>
+            </div>
+            <div class="col-6">
+                <p class="lng-access p">Unauthorized access is a potentially major problem for anyone who uses a computer
+                    or high-tech
+                    devices such as smartphones or tablets. The consequences for victims of these break-ins can include
+                    the loss of valuable data such as presentations, emails, and music. Victims may also have their bank
+                    account information, money, or even their identity stolen. Moreover, unauthorized users may use
+                    someone else's computer to break the law, which could put the victim in legal trouble.</p>
+            </div>
+
+            <div class="col-6">
+                <p class="lng-one p">One of the most common ways that hackers break into computers is by guessing
+                    passwords. Simple and
+                    commonly used passwords enable intruders to easily gain access and control of a computing device.
+                </p>
+                <p class="lng-onversely p">onversely, a password that is difficult to guess makes it prohibitively
+                    difficult for common hackers
+                    to break into a machine and will force them to look for another target. </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container-footer">
+        <div class="text-footer">
+            <p class="p-footer"><span class="lng-git p-footer">Hello, my other works can be found in my  </span><a class="a-footer" href="https://github.com/Dowak1n">github</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="scripts/lang.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+
+</html>
